@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to the #{title}
+  div Get random numbers:
+    p
+      b Single number 
+      br
+      a(href='/v1.0/random') /v1.0/random 
+    p 
+      b multiple numbers
+      br
+      a(href='/v1.0/random?count=4&length=20') /v1.0/random?count=4&length=20
+      br
+      a(href='/v1.0/random/4/20') /v1.0/random/4/20
+
+  div Usage stats:
+    p 
+      a(href='/v1.0/stats') /v1.0/stats 
+      br
+      a(href='/v1.0/usage') /v1.0/usage
+
